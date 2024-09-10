@@ -1,17 +1,37 @@
 import React from "react";
+import Logo from '../assets/mohan.jpg';
+import Resume from '../assets/reume.pdf';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D')` }}>
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative text-center z-10">
-        <h1 className="text-5xl font-bold text-white">Welcome to My Portfolio</h1>
-        <p className="mt-4 text-lg text-gray-300">I create amazing web experiences</p>
-        <a href="#projects" className="mt-8 inline-block bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-500 transition duration-300">
-          View Projects
-        </a>
+    <div className="flex items-center justify-center mt-[100px] bg-white">
+      <div className="bg-white p-8 rounded-lg flex items-center">
+        <div className="mr-8 w-3/4">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            Hi, I am Mohan Kosuri,
+            <br />
+            React & React-Navive Developer
+          </h1>
+          <p className="text-gray-600 mb-6">
+            A passionate developer specializing in building beautiful and functional web and mobile applications. I have experience in working with React for frontend development and React Native for mobile app development.
+          </p>
+          <a 
+            href={Resume} 
+            download="Mohan_Kosuri_Resume.pdf" 
+            className="bg-red-500 text-white px-6 py-2 rounded-full"
+          >
+            Download Resume
+          </a>
+        </div>
+        <div className="w-1/3">
+          <img
+            className="rounded-full w-[300px] h-[300px] object-cover border-2 shadow-lg shadow-red-800"
+            src={Logo}
+            alt="Portrait of Mohan Kosuri, a creative technologist, wearing a cap and smiling."
+          />
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
