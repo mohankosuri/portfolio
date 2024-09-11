@@ -2,11 +2,12 @@ import React from "react";
 
 import Ev from '../assets/ev.png'
 import Speedy from '../assets/sppedy.png'
+import Topcars from '../assets/Topcar.png'
 
 const projects = [
   { id: 1, title: "Ev-olution", description: "A cool web app built with React", image:Ev ,link:"https://ev-cars.vercel.app/" },
   { id: 2, title: "Project Two", description: "A mobile-friendly website built with Tailwind CSS.", image:Speedy,link:"https://speedyeats.vercel.app/"},
-  { id: 3, title: "Project Two", description: "A mobile-friendly website built with Tailwind CSS.", image: "/project2.jpg" },
+  { id: 3, title: "TopCars", description: "A mobile-friendly website built with Tailwind CSS.", image: Topcars,link:"https://topcars1.vercel.app/" },
   { id: 4, title: "Project Two", description: "A mobile-friendly website built with Tailwind CSS.", image: "/project2.jpg" },
 ];
 

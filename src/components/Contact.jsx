@@ -1,8 +1,9 @@
 import React from 'react'
+import Cars from './Cars'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className='mb-[100px]'><Cars/></div>
   )
 }
 
