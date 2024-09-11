@@ -1,34 +1,63 @@
-import React from "react";
+
+import React from 'react';
+import { FaPaperPlane, FaDownload, FaYoutube, FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaBriefcase, FaTasks, FaUsers } from 'react-icons/fa';
 import Logo from '../assets/mohan.jpg';
 import Resume from '../assets/reume.pdf';
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center mt-[100px] bg-white">
-      <div className="bg-white p-8 rounded-lg flex items-center">
-        <div className="mr-8 w-3/4">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Hi, I am Mohan Kosuri,
-            <br />
-            React & React-Navive Developer
+    <div className="flex items-center justify-center min-h-screen bg-[#fdf6f0]">
+      <div className="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-16">
+        <div className="text-center md:text-left">
+          <h2 className="text-sm text-[#f76c6c] font-bold">WEB DEVELOPER</h2>
+          <h1 className="text-5xl font-black text-[#2d2d2d] mt-2">
+            Hello, my name is <br /> Mohan Kosuri
           </h1>
-          <p className="text-gray-600 mb-6">
-            A passionate developer specializing in building beautiful and functional web and mobile applications. I have experience in working with React for frontend development and React Native for mobile app development.
+          <p className="text-gray-600 mt-4">
+            Brief description with insights into myself, my vocational journey, and what I engage in professionally.
           </p>
-          <a 
-            href={Resume} 
-            download="Mohan_Kosuri_Resume.pdf" 
-            className="bg-red-500 text-white px-6 py-2 rounded-full"
-          >
-            Download Resume
-          </a>
+          <div className="mt-8 flex justify-center md:justify-start space-x-4">
+            <button className="bg-[#f76c6c] text-white py-2 px-6 rounded-full flex items-center space-x-2">
+              <span>Contact me</span>
+              <FaPaperPlane />
+            </button>
+		
+            <a className="bg-[#2d2d2d] text-white py-2 px-6 rounded-full flex items-center space-x-2" href={Resume} 
+            download="Mohan_Kosuri_Resume.pdf" >
+              <span>Download CV</span>
+              <FaDownload />
+            </a>
+          </div>
+          <div className="mt-8 flex justify-center md:justify-start space-x-4 text-gray-600">
+            <FaYoutube />
+            <FaLinkedin />
+            <FaGithub />
+            <FaFacebook />
+            <FaInstagram />
+          </div>
         </div>
-        <div className="w-1/3">
-          <img
-            className="rounded-full w-[300px] h-[300px] object-cover border-2 shadow-lg shadow-red-800"
-            src={Logo}
-            alt="Portrait of Mohan Kosuri, a creative technologist, wearing a cap and smiling."
-          />
+        <div className="relative">
+          <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
+            <FaBriefcase className="text-[#f76c6c]" />
+            <span className="text-sm font-bold">3 Years of Experience</span>
+          </div>
+          <div className="absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
+            <FaTasks className="text-[#f76c6c]" />
+            <span className="text-sm font-bold">6k Finished Projects</span>
+          </div>
+          <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
+            <FaUsers className="text-[#f76c6c]" />
+            <span className="text-sm font-bold">9k Happy Clients</span>
+          </div>
+          <div className="relative">
+            <div className="w-64 h-64 bg-[#f76c6c] rounded-full flex items-center justify-center overflow-hidden">
+              <img
+                src={Logo}
+                alt="Portrait of Ryan Davis"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
