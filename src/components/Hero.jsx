@@ -2,7 +2,7 @@
 import React from 'react';
 import { FaPaperPlane, FaDownload, FaYoutube, FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaBriefcase, FaTasks, FaUsers } from 'react-icons/fa';
 import Logo from '../assets/mohan.jpg';
-import Resume from '../assets/reume.pdf';
+import Resume from '../assets/resumemohan .pdf'
 
 const Hero = () => {
   return (
@@ -39,16 +39,10 @@ const Hero = () => {
         <div className="relative">
           <div className="absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
             <FaBriefcase className="text-[#f76c6c]" />
-            <span className="text-sm font-bold">3 Years of Experience</span>
+            <span className="text-sm font-bold">2 Years of Experience</span>
           </div>
-          <div className="absolute bottom-0 left-0 transform -translate-x-1/2 translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
-            <FaTasks className="text-[#f76c6c]" />
-            <span className="text-sm font-bold">6k Finished Projects</span>
-          </div>
-          <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 bg-white shadow-lg rounded-lg p-4 flex items-center space-x-2">
-            <FaUsers className="text-[#f76c6c]" />
-            <span className="text-sm font-bold">9k Happy Clients</span>
-          </div>
+          
+          
           <div className="relative">
             <div className="w-64 h-64 bg-[#f76c6c] rounded-full flex items-center justify-center overflow-hidden">
               <img
