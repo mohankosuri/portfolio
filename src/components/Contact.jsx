@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
+    <div className="flex justify-center items-center min-h-screen bg-[#fdf6f0]">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg"

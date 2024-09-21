@@ -3,7 +3,7 @@ import Logo from '../assets/mohan.jpg'
 
 const About = () => {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div className="bg-[#fdf6f0] min-h-screen flex items-center justify-center">
       <div className="max-w-4xl bg-white p-8 rounded-lg shadow-md">
         <h2 className="text-4xl font-bold text-gray-800 mb-6 text-center">
           About Me
