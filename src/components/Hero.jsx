@@ -2,7 +2,7 @@
 import React from 'react';
 import { FaPaperPlane, FaDownload, FaYoutube, FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaBriefcase, FaTasks, FaUsers } from 'react-icons/fa';
 import Logo from '../assets/mohan.jpg';
-import Resume from '../assets/resumemohan .pdf'
+import Resume from '../assets/MohanResume.pdf'
 
 const Hero = () => {
   return (
